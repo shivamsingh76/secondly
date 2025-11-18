@@ -15,10 +15,19 @@ class MyWidget extends StatelessWidget {
           title: const Center(child: Text('Jhunnu App')),
           backgroundColor: const Color.fromARGB(255, 199, 67, 85),
         ),
-        body: const Center(
-          child: Image(image: AssetImage('images/AP_image.jpg')),
-        ),
-        backgroundColor: const Color.fromARGB(255, 230, 149, 200),
+        body: Container(
+          color: Colors.lightGreen[200],
+          width: 150.0,
+          height: 150.0,
+          padding: const EdgeInsets.all(20.0),
+          alignment: Alignment.center,
+          margin: const EdgeInsets.all(100.0),
+          transform: Matrix4.rotationZ(0.1),
+          child: Text(
+            'Hello, Jhunnu!',
+            style: TextStyle(fontSize: 24),
+          ),
+        ), 
       ),
     );
   }
